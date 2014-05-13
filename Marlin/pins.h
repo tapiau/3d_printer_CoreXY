@@ -1707,6 +1707,19 @@
   #define MOSI_PIN         10
 #endif
 
+#define LCD_PINS_RS         PIND1 
+#define LCD_PINS_ENABLE     PIND3
+#define LCD_PINS_D4         PIND0
+#define LCD_PINS_D5         PIND2
+#define LCD_PINS_D6         PIND4
+#define LCD_PINS_D7         PIND6
+
+//buttons are directly attached
+#define BTN_EN1             29
+#define BTN_EN2             31
+#define BTN_ENC             41
+
+
 #endif  // MOTHERBOARD == 8 (Teensylu) or 81 (Printrboard)
 
 /****************************************************************************************
