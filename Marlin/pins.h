@@ -1652,34 +1652,34 @@
 
 #define LARGE_FLASH        true
 
-#define X_STEP_PIN          0
-#define X_DIR_PIN           1
-#define X_ENABLE_PIN       39
+#define X_STEP_PIN         28
+#define X_DIR_PIN          29
+#define X_ENABLE_PIN       19
 
-#define Y_STEP_PIN          2
-#define Y_DIR_PIN           3
-#define Y_ENABLE_PIN       38
+#define Y_STEP_PIN         30
+#define Y_DIR_PIN          31
+#define Y_ENABLE_PIN       18
 
-#define Z_STEP_PIN          4
-#define Z_DIR_PIN           5
-#define Z_ENABLE_PIN       23
+#define Z_STEP_PIN         32
+#define Z_DIR_PIN          33
+#define Z_ENABLE_PIN       17
 
-#define E0_STEP_PIN         6
-#define E0_DIR_PIN          7
-#define E0_ENABLE_PIN      19
+#define E0_STEP_PIN        34
+#define E0_DIR_PIN         35
+#define E0_ENABLE_PIN      13
 
-#define HEATER_0_PIN       21  // Extruder
+#define HEATER_0_PIN       15  // Extruder
 #define HEATER_1_PIN       -1
 #define HEATER_2_PIN       -1
-#define HEATER_BED_PIN     20  // Bed
-#define FAN_PIN            22  // Fan
+#define HEATER_BED_PIN     14  // Bed
+#define FAN_PIN            16  // Fan
 // You may need to change FAN_PIN to 16 because Marlin isn't using fastio.h
 // for the fan and Teensyduino uses a different pin mapping.
 
 #if MOTHERBOARD == 8  // Teensylu
-  #define X_STOP_PIN         13
-  #define Y_STOP_PIN         14
-  #define Z_STOP_PIN         15
+  #define X_STOP_PIN         25
+  #define Y_STOP_PIN         26
+  #define Z_STOP_PIN         27
   #define TEMP_0_PIN          7  // Extruder / Analog pin numbering
   #define TEMP_BED_PIN        6  // Bed / Analog pin numbering
 #else  // Printrboard
@@ -1702,22 +1702,22 @@
 
 #ifndef SDSUPPORT
 // these pins are defined in the SD library if building with SD support
-  #define SCK_PIN           9
-  #define MISO_PIN         11
-  #define MOSI_PIN         10
+  #define SCK_PIN          21
+  #define MISO_PIN         23
+  #define MOSI_PIN         22
 #endif
 
-#define LCD_PINS_RS         PIND1 
-#define LCD_PINS_ENABLE     PIND3
-#define LCD_PINS_D4         PIND0
-#define LCD_PINS_D5         PIND2
-#define LCD_PINS_D6         PIND4
-#define LCD_PINS_D7         PIND6
+#define LCD_PINS_RS          1 
+#define LCD_PINS_ENABLE      3
+#define LCD_PINS_D4          0
+#define LCD_PINS_D5          2
+#define LCD_PINS_D6          4
+#define LCD_PINS_D7          6
 
 //buttons are directly attached
-#define BTN_EN1             29
-#define BTN_EN2             31
-#define BTN_ENC             41
+#define BTN_EN1              5
+#define BTN_EN2              7
+#define BTN_ENC             39
 
 
 #endif  // MOTHERBOARD == 8 (Teensylu) or 81 (Printrboard)
